@@ -11,7 +11,7 @@ class A8 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/autom8y/a8/releases/download/v0.6.0/a8_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "b1ee2030fd5730dcaf93a402121a9213e6a6cd2c6da6505693e8d5d301d11ea5"
+      sha256 "0427e122bc1cb0f44d571af9d43e22d29d433d1cf4ad96ea2846fc61045f012d"
 
       define_method(:install) do
         bin.install "a8"
@@ -19,7 +19,7 @@ class A8 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/autom8y/a8/releases/download/v0.6.0/a8_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a2689c56d3eefe94adf5dcea0685b623f1889e4ae8aa3e1442435d995b2989d9"
+      sha256 "651da6b77fc60d6efa7a360da18a8525e83f4fc6f6f2a4e0c0c473ea15445f6d"
 
       define_method(:install) do
         bin.install "a8"
@@ -30,7 +30,7 @@ class A8 < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/autom8y/a8/releases/download/v0.6.0/a8_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "d685524ac7a651fdb52a6afc436b6f7a620655b491733bfd4623c47fea64e27a"
+      sha256 "967d92067cd93c55e72503ec9f6ecaf5bb326cdf2e7662d2ac0d6a629bea5a7b"
       define_method(:install) do
         bin.install "a8"
       end
