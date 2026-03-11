@@ -5,21 +5,21 @@
 class Ari < Formula
   desc "Ariadne CLI - The thread through the Knossos labyrinth"
   homepage "https://github.com/autom8y/knossos"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/autom8y/knossos/releases/download/v0.8.0/ari_0.8.0_darwin_amd64.tar.gz"
-      sha256 "ccd94f45ef27dd886b55bda8d90adab57d418e41d36a70df2dba2683b3416dac"
+      url "https://github.com/autom8y/knossos/releases/download/v0.9.0/ari_0.9.0_darwin_amd64.tar.gz"
+      sha256 "bec9dd669ce31f088bca287fcc6878e208086b17a47cd8ce783ea8477df39d61"
 
       define_method(:install) do
         bin.install "ari"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/autom8y/knossos/releases/download/v0.8.0/ari_0.8.0_darwin_arm64.tar.gz"
-      sha256 "967d930ff8f62a60e7cdfe35de83d2b89aaf30c94e99ff35f82caec9ed00894c"
+      url "https://github.com/autom8y/knossos/releases/download/v0.9.0/ari_0.9.0_darwin_arm64.tar.gz"
+      sha256 "169726648de81c5e46a8710854580cee1cf6a4bfffacbb877dbeb1174cf7af6d"
 
       define_method(:install) do
         bin.install "ari"
@@ -29,15 +29,15 @@ class Ari < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/autom8y/knossos/releases/download/v0.8.0/ari_0.8.0_linux_amd64.tar.gz"
-      sha256 "a2f1f34f7ade3ea9299edc795e6eec99e9fabf7436951487c7972630e507d1ce"
+      url "https://github.com/autom8y/knossos/releases/download/v0.9.0/ari_0.9.0_linux_amd64.tar.gz"
+      sha256 "47b0301d7228b852db04136f17520d480af4e1011ac1fafc90b544fce2280630"
       define_method(:install) do
         bin.install "ari"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/autom8y/knossos/releases/download/v0.8.0/ari_0.8.0_linux_arm64.tar.gz"
-      sha256 "ce6d2cbbeab966ff8a96a808a8c7bfd2699061093287685ec475ec819532e456"
+      url "https://github.com/autom8y/knossos/releases/download/v0.9.0/ari_0.9.0_linux_arm64.tar.gz"
+      sha256 "a7da36693d52b18cac879ded47103a41b04bc969bc09c64b3765327bbfcb6c39"
       define_method(:install) do
         bin.install "ari"
       end
