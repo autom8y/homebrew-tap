@@ -5,21 +5,21 @@
 class Ari < Formula
   desc "Ariadne CLI - The thread through the Knossos labyrinth"
   homepage "https://github.com/autom8y/knossos"
-  version "0.14.0"
+  version "0.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/autom8y/knossos/releases/download/v0.14.0/ari_0.14.0_darwin_amd64.tar.gz"
-      sha256 "51670b414a120d4dbd00ae97a75297601b1d19aba12efc5af663d8d7cc9b5fb0"
+      url "https://github.com/autom8y/knossos/releases/download/v0.15.0/ari_0.15.0_darwin_amd64.tar.gz"
+      sha256 "cb6296ff49bd0ee60e7c55ceb21f4fbef9db1f9aed0ae5ee147cbc980bdb4f0b"
 
       define_method(:install) do
         bin.install "ari"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/autom8y/knossos/releases/download/v0.14.0/ari_0.14.0_darwin_arm64.tar.gz"
-      sha256 "f3066e10d6b60f03ef2440e750650c02edce6d0ed03886c12aee00beebabb916"
+      url "https://github.com/autom8y/knossos/releases/download/v0.15.0/ari_0.15.0_darwin_arm64.tar.gz"
+      sha256 "fefd86ae6dd159d14738f2c6575364de4247c3b3f0c022a306edd71086b91ea8"
 
       define_method(:install) do
         bin.install "ari"
@@ -29,15 +29,15 @@ class Ari < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/autom8y/knossos/releases/download/v0.14.0/ari_0.14.0_linux_amd64.tar.gz"
-      sha256 "f741c039752a84dd50e400a54488f609bf54c87397322f0ba93282efa24b8868"
+      url "https://github.com/autom8y/knossos/releases/download/v0.15.0/ari_0.15.0_linux_amd64.tar.gz"
+      sha256 "4dbae49440a0d60673bf582f69f273dca35d24f5cb2269bc9d67da27de613b5b"
       define_method(:install) do
         bin.install "ari"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/autom8y/knossos/releases/download/v0.14.0/ari_0.14.0_linux_arm64.tar.gz"
-      sha256 "8357eefdaa8815d0533b8c317c55c1212ea5c078655b04dd94129dad6edde91f"
+      url "https://github.com/autom8y/knossos/releases/download/v0.15.0/ari_0.15.0_linux_arm64.tar.gz"
+      sha256 "23daefeb3bddd314dc9b3ce036b65252681fc1bb4efbf7d6c872081e6e6d124a"
       define_method(:install) do
         bin.install "ari"
       end
