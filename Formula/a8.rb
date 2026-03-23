@@ -6,20 +6,20 @@ require_relative "../lib/custom_download_strategy"
 class A8 < Formula
   desc "a8 - autom8y ecosystem control plane CLI"
   homepage "https://github.com/autom8y/a8"
-  version "0.7.1"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/autom8y/a8/releases/download/v0.7.1/a8_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "cc995e8ffa16cb840b99df5a68bf59c3cabe565c21c18753d0cf9b77441ef622"
+      url "https://github.com/autom8y/a8/releases/download/v0.8.0/a8_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "b489f7849fcff71dc3106312a03a41c09dd734d054d578cf2dc317b4547c130b"
 
       define_method(:install) do
         bin.install "a8"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/autom8y/a8/releases/download/v0.7.1/a8_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "b2460cda24bae3eaee712af627daba64ca86a83e5aff1e1f09640beabec2a709"
+      url "https://github.com/autom8y/a8/releases/download/v0.8.0/a8_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "16be1b9a54a4f73e176363bc31597e436155142c86abc65f35c428ac2ee93aad"
 
       define_method(:install) do
         bin.install "a8"
@@ -29,8 +29,8 @@ class A8 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/autom8y/a8/releases/download/v0.7.1/a8_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a820e87ef35a6943f0763b1d97904d0461e50c49d1891c3f43eb74d6b776ab58"
+      url "https://github.com/autom8y/a8/releases/download/v0.8.0/a8_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "82d7b55c14dc7d441c7a087d965f8dcfc25de763350e8740a6d619a99489dc97"
       define_method(:install) do
         bin.install "a8"
       end
